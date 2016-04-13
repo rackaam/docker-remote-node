@@ -5,4 +5,4 @@ RUN apk update && apk add nodejs unzip wget && rm -rf /var/cache/apk/*
 ADD launch.sh /launch.sh
 RUN chmod 755 /launch.sh
 
-EXPOSE 80
+CMD ["ash", "/launch.sh"]
